@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="/style.css" />
+
+		<title>Netflix Clone - DIO</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="brand">NETFLIX</h1>
+			<nav class="navigation">
+				<a href="#inicio">Início</a>
+				<a href="#">Séries</a>
+				<a href="#">Filmes</a>
+				<a href="#">Bombando</a>
+				<a href="#minhalista">Minha Lista</a>
+			</nav>
+			<i class="fas fa-search"></i>
+			<a href="#" class="infantilSection">Infantil</a>
+			<i class="far fa-bell"></i>
+			<div class="avatarProfile">
+				<img
+					src="https://www.show.news/__export/1583546825593/sites/debate/img/2020/03/06/lucifer-morningstar-nueva-temporada_crop1583546767282.jpg_423682103.jpg"
+					alt="Lúcifer Avatar Profile"
+				/>
+				<i class="fas fa-angle-down"></i>
+			</div>
+		</header>
+
+		<main>
+			<section class="firstFilm">
+				<div class="firstfilmBackground"></div>
+				<div class="firstfilmDescription">
+					<h3 id="inicio">King Kong</h3>
+					<p>
+						Na nova versão do clássico, com direção de Peter Jackson, um grupo
+						de exploradores e uma produtora de cinema partem em busca de um
+						gorila gigante.
+					</p>
+				</div>
+				<div class="buttonGroup">
+					<div class="watchButton">
+						<button><i class="fas fa-play"></i> Assistir</button>
+					</div>
+					<div class="moreinfosButton">
+						<button><i class="fas fa-info-circle"></i> Mais Informações</button>
+					</div>
+				</div>
+			</section>
+			<section class="mylistCarousel">
+				<h2 id="minhalista">Minha lista</h2>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="/mylist/b99.jpg" alt="Capa de B99" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="/mylist/peakyblinders.jpg"
+								alt="Capa de Peaky Blinders"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img src="/mylist/suits.jpg" alt="Capa de Suits" />
+						</div>
+						<div class="swiper-slide">
+							<img src="/mylist/round6.jpg" alt="Capa de Round6" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="/mylist/htgam.jpg"
+								alt="Capa de Como defender um assassino"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="/mylist/jurassic world.jpg"
+								alt="Capa de Jurassic World"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img src="/mylist/spn.jpeg" alt="Capa de Supernatural" />
+						</div>
+					</div>
+					<div class="swiper-navigation-buttons">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</section>
+			<section class="mylistCarousel">
+				<h2 id="minhalista">Minha lista</h2>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="/mylist/b99.jpg" alt="Capa de B99" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="/mylist/peakyblinders.jpg"
+								alt="Capa de Peaky Blinders"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img src="/mylist/suits.jpg" alt="Capa de Suits" />
+						</div>
+						<div class="swiper-slide">
+							<img src="/mylist/round6.jpg" alt="Capa de Round6" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="/mylist/htgam.jpg"
+								alt="Capa de Como defender um assassino"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="/mylist/jurassic world.jpg"
+								alt="Capa de Jurassic World"
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img src="/mylist/spn.jpeg" alt="Capa de Supernatural" />
+						</div>
+					</div>
+					<div class="swiper-navigation-buttons">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".swiper", {
+				slidesPerView: 5,
+				spaceBetween: 10,
+				slidesPerGroup: 3,
+				loop: true,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+					clickable: true,
+				},
+				breakpoints: {
+					360: {
+						slidesPerView: 1,
+					},
+					480: {
+						slidesPerView: 2,
+						spaceBetween: 10,
+					},
+					768: {
+						slidesPerView: 4,
+						spaceBetween: 10,
+					},
+					1024: {
+						slidesPerView: 5,
+						spaceBetween: 10,
+					},
+				},
+			});
+		</script>
+	</body>
+</html>
