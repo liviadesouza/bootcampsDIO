@@ -10,7 +10,7 @@
 
 
 <div align="center">
-<h3><a href="https://naliferreira.github.io/instagram-ldpage-dio/">Deploy</a></h3>
+<h3><a href="https://liviadesouza.github.io/instagram-ldpage-dio/">Deploy</a></h3>
 <h3> Visualização </h3>
 <img width="100%" src="https://s10.gifyu.com/images/2021-03-17-093708669.gif">
 </div>
